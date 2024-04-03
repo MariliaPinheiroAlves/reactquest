@@ -1,19 +1,18 @@
 import { PropTypes } from "prop-types";
 
 const showLabel = (label) => {
-  console.log("A label desse botão é", label);
+  alert(`A label desse botão é '${label}'`);
 };
 
-const Button = ({ label, children }) => {
+const Button = ({ label }) => {
   return (
     <button onClick={() => showLabel(label)}>
-      {children}
+      {label}
     </button>
   );
 };
 
 Button.propTypes = {
-  children: PropTypes.string,
   label: PropTypes.string,
 };
 

@@ -3,8 +3,11 @@ import './paragraph.css'
 
 const Paragraph = ({ children, color, textStyle }) => {
   return (
-    <div style={{ color: color, textTransform: textStyle }} className="container">
+    <div 
+      style={{ color: color, textTransform: textStyle }} className="container">
       {children}
+        <p>Cor do texto: {color}</p>
+        <p>Estilo do texto: {textStyle}</p>
     </div>
   );
 };

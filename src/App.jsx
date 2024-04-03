@@ -19,8 +19,8 @@ function App() {
         </p>
       </Paragraph>
 
-    <Button label="apenas um clique aqui">Clique aqui</Button>
-    
+      <Button label="Clique Aqui" />
+      <Button label="Baixar CV" />
     </div>
   );
 }
